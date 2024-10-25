@@ -7,32 +7,31 @@ import { headphonesImg, colorsHeadphones } from '../constants';
 import { useState } from 'react';
 
 const HeadphonesPage = () => {
-  const [selectedColor, setSelectedColor] = useState(colorsHeadphones[0].value); 
+  const [selectedColor, setSelectedColor] = useState(colorsHeadphones[0].value);
 
   const handleAddToCart = () => {
     console.log('Product added to cart!');
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto p-4">
-      <div className="flex flex-col lg:flex-row gap-4">
+    <div className="max-w-screen-xl mx-auto p-4 flex">
+      <div className="flex flex-col lg:flex-row gap-10">
         {/* Slider img */}
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="">
           <ImageSlider images={headphonesImg[selectedColor]} />
         </div>
 
         {/* Product info */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 flex flex-col max-w-[500px]">
           <Headphones />
 
-          <div className="my-4">
-            <ColorSelector
-              colors={colorsHeadphones}
-              onChange={setSelectedColor}
-            />
+          <div className="mt-4">
+            <ColorSelector colors={colorsHeadphones} selectedColor={selectedColor} onChange={setSelectedColor} />
           </div>
 
-          <AddToCartButton onClick={handleAddToCart} />
+          <div className="border-b border-gray-200 py-4">
+            <AddToCartButton onClick={handleAddToCart} />
+          </div>
         </div>
       </div>
     </div>

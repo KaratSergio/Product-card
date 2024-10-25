@@ -12,8 +12,11 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
   const prevImage = () => setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="flex flex-col w-full max-w-lg relative">
-      <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden">
+    <div className="flex flex-col w-full max-w-screen-lg relative">
+      <div
+        className="relative w-full overflow-hidden 
+          h-80 sm:h-96 md:h-[500px] lg:h-[600px] xl:h-[750px]"
+      >
         <img
           src={images[currentImage]}
           alt="Product"
@@ -49,7 +52,7 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
             <img
               src={img}
               alt={`Thumbnail ${index + 1}`}
-              className="object-cover w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+              className="object-cover w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:h-20 xl:w-20"
             />
           </button>
         ))}
