@@ -11,7 +11,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({ colors, selectedColor, on
 
   return (
     <div className="flex p-4 items-center justify-between border-gray-200 border-t border-b">
-      <span className="text-lg font-medium">{selectedColorName}</span>
+      <span className="text-lg">{selectedColorName}</span>
 
       <RadioGroup.Root className="flex gap-2" aria-label="Select color" onValueChange={onChange}>
         {colors.map((color) => (
