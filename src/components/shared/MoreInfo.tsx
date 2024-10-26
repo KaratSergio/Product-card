@@ -24,12 +24,13 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ content }) => {
             aria-hidden
           />
         </Accordion.Trigger>
+
         <Accordion.Content
-          className={`text-gray-700 overflow-hidden transition-all duration-[900ms] ease-in-out`}
+          className="text-gray-700 overflow-hidden transition-all ease-in-out"
           style={{
             maxHeight: open ? '500px' : '0',
             opacity: open ? 1 : 0,
-            transition: 'max-height 900ms ease-in-out, opacity 900ms ease-in-out',
+            transition: `max-height 1500ms ease-in-out, opacity 1500ms ease-in-out ${open ? '0ms' : '300ms'}`,
           }}
         >
           <div className="mt-2">

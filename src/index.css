@@ -30,9 +30,10 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -57,6 +58,15 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari, Chrome */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer, Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (prefers-color-scheme: light) {

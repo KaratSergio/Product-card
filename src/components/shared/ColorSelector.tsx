@@ -30,6 +30,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({ colors, selectedColor, on
             <span
               style={{
                 backgroundColor: color.hex,
+
                 width: '65%',
                 height: '65%',
               }}

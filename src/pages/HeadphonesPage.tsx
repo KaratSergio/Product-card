@@ -21,7 +21,7 @@ const HeadphonesPage = () => {
     <div className="max-w-screen-xl mx-auto p-4 flex">
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Slider img */}
-        <div className="">
+        <div>
           <ImageSlider images={headphonesImg[selectedColor]} />
         </div>
         {/* Product info */}
@@ -39,7 +39,7 @@ const HeadphonesPage = () => {
         </div>
       </div>
 
-      <Toast title="Product added to cart!" open={isToastOpen} onOpenChange={setToastOpen} />
+      <Toast title="Product added to basket!" open={isToastOpen} onOpenChange={setToastOpen} />
     </div>
   );
 };
