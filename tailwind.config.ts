@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        custom: '1170px', // Custom breakpoint
+      },
       colors: {},
     },
   },
