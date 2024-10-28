@@ -43,7 +43,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   };
 
   return (
-    <div id="overview" className="flex flex-col items-center w-full max-w-screen-lg">
+    <div id="overview" className="flex flex-col items-center w-full mt-4 max-w-screen-lg">
       <div className="relative w-full overflow-hidden h-80 sm:h-[480px] md:h-[500px] lg:h-[600px] xl:h-[750px]">
         <img
           src={images[currentImageIndex]}
