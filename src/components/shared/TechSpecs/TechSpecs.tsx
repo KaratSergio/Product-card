@@ -33,7 +33,7 @@ const TechSpecs = () => {
     <div id="tech-specs" className="w-full">
       <h2 className="text-3xl md:text-5xl m-4 md:m-8 font-semibold">Tech Specs</h2>
       <Tabs.Root defaultValue="audio" onValueChange={(value) => setSelectedTab(value as TabKey)}>
-        <Tabs.List className="flex flex-wrap gap-8 md:gap-12 pb-2">
+        <Tabs.List className="flex flex-wrap gap-4 md:gap-12 pb-2">
           <Tabs.Trigger value="audio" className="tab-trigger">
             Audio
           </Tabs.Trigger>

@@ -43,7 +43,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-screen-lg">
+    <div id="overview" className="flex flex-col items-center w-full max-w-screen-lg">
       <div className="relative w-full overflow-hidden h-80 sm:h-[480px] md:h-[500px] lg:h-[600px] xl:h-[750px]">
         <img
           src={images[currentImageIndex]}
@@ -52,14 +52,14 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
         />
         <button
           onClick={handlePreviousImage}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/30 rounded-full shadow-md p-2"
           aria-label="Previous image"
         >
           <ChevronLeftIcon />
         </button>
         <button
           onClick={handleNextImage}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/30 rounded-full shadow-md p-2"
           aria-label="Next image"
         >
           <ChevronRightIcon />

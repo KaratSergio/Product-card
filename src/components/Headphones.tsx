@@ -11,7 +11,7 @@ const Headphones = () => {
   `;
 
   return (
-    <div id="overview" className="max-w-4xl mx-auto p-4">
+    <div className="max-w-4xl mx-auto p-4">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Sonos Ace</h1>
       <p className="text-sm sm:text-base md:text-xl sm:mt-1">Headphones</p>
       <div className="flex items-center justify-between mt-4">

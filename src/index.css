@@ -75,9 +75,10 @@ button:focus-visible {
   position: relative;
   font-weight: normal;
   background: transparent;
-  padding-left: 0px;
-  padding-right: 0px;
+  box-shadow: -1px -1px 12px rgba(4, 4, 4, 0.098);
+  padding: 2px 4px;
   border: none;
+  border-radius: 0px;
   cursor: pointer;
   transition: color 0.3s;
   outline: none;
