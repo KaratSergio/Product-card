@@ -4,6 +4,8 @@ import ImageSlider from '../components/shared/ImageSlider';
 import Headphones from '../components/Headphones';
 import HeadphonesFeatures from '../components/shared/FeatureList';
 import TechSpec from '../components/shared/TechSpecs/TechSpecs';
+import AddComment from '../components/shared/AddComment';
+import ScrollBottomBar from '../components/ScrollBottomBar';
 import Toast from '../components/shared/Toast';
 
 import { headphonesImg, colorsHeadphones } from '../constants';
@@ -39,6 +41,8 @@ const HeadphonesPage = () => {
       </div>
       <TechSpec />
 
+      <AddComment />
+      <ScrollBottomBar />
       <Toast title="Product added to basket!" open={isToastOpen} onOpenChange={setToastOpen} />
     </div>
   );
